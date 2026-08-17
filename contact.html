@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-<link
-  rel="icon"
-  type="image/jpeg"
-  href="/images/icon.jpg?v=3"
->
 
-<link
-  rel="shortcut icon"
-  href="/images/icon.jpg?v=3"
->
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1"
   >
 
-  <title>Contact | The Third Choice™</title>
-
   <meta
     name="description"
-    content="Contact The Third Choice™ about attending, partnerships, and upcoming experiences."
+    content="Contact The Third Choice™ about partnerships, venue opportunities, ticket questions and upcoming experiences."
   >
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Contact | The Third Choice™</title>
+
+  <link
+    rel="icon"
+    type="image/jpeg"
+    href="/images/icon.jpg?v=3"
+  >
+
+  <link
+    rel="shortcut icon"
+    href="/images/icon.jpg?v=3"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
 
   <link
     rel="preconnect"
@@ -42,7 +48,10 @@
     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
   >
 
-  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
 </head>
 
 <body data-page="contact">
@@ -172,7 +181,10 @@
         aria-label="Open menu"
         aria-expanded="false"
       >
-        <i class="bx bx-menu"></i>
+        <i
+          class="bx bx-menu"
+          aria-hidden="true"
+        ></i>
       </button>
 
     </nav>
@@ -197,20 +209,25 @@
         </h1>
 
         <p>
-          Whether you are ready to attend, explore VIP access,
-          discuss a partnership, or simply ask a thoughtful question,
-          we would love to hear from you.
+          Whether you have a ticket question, want to discuss
+          a partnership or venue opportunity, or simply want
+          to learn more, we would love to hear from you.
         </p>
 
         <div class="contact-note">
 
           <strong>
-            Have a question?
+            Ready to purchase?
           </strong>
 
           <span>
-            Complete the form and our team will respond by email.
+            Visit our Tickets page to securely reserve your seat
+            through Eventbrite.
           </span>
+
+          <a href="tickets.html">
+            View Ticket Options →
+          </a>
 
         </div>
 
@@ -297,20 +314,24 @@
               Select one
             </option>
 
-            <option value="The Access Accelerator">
-              The Access Accelerator ($50)
+            <option value="partner">
+              Partnership Opportunity
             </option>
 
-            <option value="The Imperial Blueprint">
-              The Imperial Blueprint ($250)
+            <option value="venue">
+              Venue or Hosting Opportunity
             </option>
 
-            <option value="Becoming a Partner">
-              Becoming a Partner
+            <option value="ticket-question">
+              Question About Tickets
             </option>
 
-            <option value="Learning More">
-              Learning More
+            <option value="general">
+              General Question
+            </option>
+
+            <option value="more">
+              Learning More About The Third Choice
             </option>
 
           </select>
@@ -335,11 +356,17 @@
           Send My Message
         </button>
 
+        <p
+          class="form-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+
       </form>
 
     </section>
 
-    <!-- CREATIVE COMMUNITY PHOTO SECTION -->
+    <!-- COMMUNITY PHOTO SECTION -->
 
     <section class="community-feature">
 
@@ -440,4 +467,5 @@
   <script src="script.js"></script>
 
 </body>
+
 </html>
