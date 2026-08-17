@@ -4679,3 +4679,77 @@ body {
     margin-left: auto;
   }
 }
+
+/* =========================================
+   RESPONSIVE CHOICE STATEMENT FIX
+========================================= */
+
+.choice-statement-intro,
+.choice-statement-finale,
+.choice-statement-lines,
+.choice-statement-lines p {
+  min-width: 0;
+}
+
+.choice-statement-lines p {
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: clamp(10px, 1.5vw, 24px);
+  font-size: clamp(2.1rem, 3.5vw, 4.5rem);
+}
+
+.choice-statement-lines p span {
+  text-align: left;
+}
+
+.choice-statement-lines p strong {
+  text-align: right;
+  white-space: normal;
+}
+
+/* Stack the two main sides sooner on laptops and tablets */
+
+@media (max-width: 1180px) {
+  .split-statement.choice-statement {
+    grid-template-columns: 1fr;
+    gap: 65px;
+    min-height: auto;
+  }
+
+  .choice-statement-finale {
+    max-width: none;
+    padding-top: 45px;
+    padding-left: 0;
+    border-top: 1px solid rgba(216, 231, 89, 0.35);
+    border-left: 0;
+  }
+
+  .choice-statement-lines p {
+    font-size: clamp(2.4rem, 6vw, 4.75rem);
+  }
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+  .split-statement.choice-statement {
+    gap: 55px;
+    padding: 70px 24px;
+  }
+
+  .choice-statement-lines p {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 22px 0;
+    font-size: clamp(2.35rem, 11vw, 3.8rem);
+  }
+
+  .choice-statement-lines p span,
+  .choice-statement-lines p strong {
+    text-align: left;
+  }
+
+  .choice-statement-lines p em {
+    margin: 3px 0;
+    font-size: 0.28em;
+  }
+}
