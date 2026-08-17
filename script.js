@@ -124,14 +124,14 @@ if (document.readyState === "loading") {
   showPage();
 }
 
-/* Restore the page after using the browser Back button */
+/* Restore page after using browser Back button */
 
 window.addEventListener("pageshow", () => {
   document.body.classList.remove("page-leaving");
   document.body.classList.add("page-loaded");
 });
 
-/* Automatically add left-side animations */
+/* Add left-side animations */
 
 document
   .querySelectorAll(`
@@ -150,7 +150,7 @@ document
     element.classList.add("reveal-left");
   });
 
-/* Automatically add right-side animations */
+/* Add right-side animations */
 
 document
   .querySelectorAll(`
@@ -168,7 +168,7 @@ document
     element.classList.add("reveal-right");
   });
 
-/* Automatically add upward animations */
+/* Add upward animations */
 
 document
   .querySelectorAll(`
@@ -183,6 +183,7 @@ document
     .page-cta,
     .event-details,
     .contact-image-strip,
+    .community-feature,
     .bio-highlights,
     .bio-next,
     .faq-list details
@@ -191,13 +192,14 @@ document
     element.classList.add("reveal");
   });
 
-/* Automatically animate photographs */
+/* Animate photographs */
 
 document
   .querySelectorAll(`
     .hero-media > img,
     .bio-image img,
-    .photo-placeholder
+    .photo-placeholder,
+    .community-photo-frame img
   `)
   .forEach((element) => {
     element.classList.add("photo-reveal");
@@ -277,10 +279,8 @@ document.querySelectorAll("a[href]").forEach((link) => {
   });
 });
 
-/* Contact form */
+/* Preselect contact interest from URL */
 
-const form = document.querySelector("#contact-form");
-const formStatus = document.querySelector(".form-status");
 const interest = document.querySelector("#interest");
 
 const requestedInterest = new URLSearchParams(
@@ -291,10 +291,15 @@ if (interest && requestedInterest) {
   interest.value = requestedInterest;
 }
 
-form?.addEventListener("submit", (event) => {
+/* Formspree contact form */
+
+const contactForm = document.querySelector("#contact-form");
+const formStatus = document.querySelector(".form-status");
+
+contactForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const button = form.querySelector(
+  const button = contactForm.querySelector(
     'button[type="submit"]'
   );
 
@@ -302,22 +307,48 @@ form?.addEventListener("submit", (event) => {
     return;
   }
 
+  const originalButtonText = button.textContent;
+
   button.disabled = true;
-  button.textContent = "Message Received";
+  button.textContent = "Sending...";
 
   if (formStatus) {
-    formStatus.textContent =
-      "Thank you. This demonstration form is working. Connect it to your email service before launch.";
+    formStatus.textContent = "";
   }
 
-  window.setTimeout(() => {
-    form.reset();
+  try {
+    const response = await fetch(contactForm.action, {
+      method: "POST",
+      body: new FormData(contactForm),
+      headers: {
+        Accept: "application/json"
+      }
+    });
 
-    button.disabled = false;
-    button.textContent = "Send My Message";
+    if (!response.ok) {
+      throw new Error("The form could not be submitted.");
+    }
+
+    contactForm.reset();
+
+    button.textContent = "Message Sent";
 
     if (formStatus) {
-      formStatus.textContent = "";
+      formStatus.textContent =
+        "Thank you! Your message has been received. A member of The Third Choice team will respond soon.";
     }
-  }, 3000);
+
+    window.setTimeout(() => {
+      button.disabled = false;
+      button.textContent = originalButtonText;
+    }, 4000);
+  } catch (error) {
+    button.disabled = false;
+    button.textContent = originalButtonText;
+
+    if (formStatus) {
+      formStatus.textContent =
+        "We could not send your message. Please check your connection and try again.";
+    }
+  }
 });
