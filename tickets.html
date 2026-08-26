@@ -52,6 +52,9 @@
     rel="stylesheet"
     href="style.css"
   >
+  <style>
+    .live-dates{padding:clamp(5rem,9vw,9rem) clamp(1.25rem,5vw,6rem);background:#f6f0e5;color:#173f32}.live-dates-header{width:min(780px,100%);margin:0 auto 3.5rem;text-align:center}.live-dates-header h2{margin:.5rem 0 1rem;font-family:"Playfair Display",serif;font-size:clamp(2.6rem,6vw,5.5rem);line-height:.98}.live-dates-header p:last-child{max-width:620px;margin:0 auto;font-size:clamp(1rem,2vw,1.2rem)}.city-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;width:min(1200px,100%);margin:0 auto}.city-card{min-height:315px;padding:2rem;border:1px solid rgba(157,126,50,.42);background:rgba(255,255,255,.42);display:flex;flex-direction:column;justify-content:space-between;transition:transform 220ms ease,background-color 220ms ease}.city-card:hover{transform:translateY(-5px);background:rgba(255,255,255,.72)}.city-card.featured-city{background:#173f32;color:#fffaf0}.city-number{color:#a48535;font-size:.75rem;letter-spacing:.18em}.city-card h3{margin:1rem 0 .65rem;font-family:"Playfair Display",serif;font-size:clamp(2rem,4vw,3.25rem);font-weight:500}.city-card p{margin:0;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase}.city-card .btn{align-self:flex-start;margin-top:2.25rem}.notify-dialog{width:min(520px,calc(100% - 2rem));padding:0;border:1px solid rgba(157,126,50,.55);background:#f6f0e5;color:#173f32;box-shadow:0 28px 80px rgba(0,0,0,.35)}.notify-dialog::backdrop{background:rgba(11,35,27,.76);backdrop-filter:blur(4px)}.notify-form{padding:clamp(2rem,6vw,3.5rem)}.notify-form h2{margin:.4rem 0 .75rem;font-family:"Playfair Display",serif;font-size:clamp(2rem,6vw,3.4rem);line-height:1}.notify-form>p{margin:0 0 2rem}.notify-form label{display:block;margin-top:1.1rem;font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase}.notify-form input{width:100%;margin-top:.45rem;padding:.9rem 0;border:0;border-bottom:1px solid #6d806f;border-radius:0;background:transparent;color:#173f32;font:inherit}.notify-form input:focus{outline:0;border-bottom-color:#a48535}.notify-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}.dialog-close{border:0;background:transparent;color:#173f32;cursor:pointer;font:inherit;font-weight:600}@media(max-width:900px){.city-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.city-grid{grid-template-columns:1fr}.city-card{min-height:260px}}
+  </style>
 </head>
 
 <body data-page="tickets">
@@ -69,8 +72,8 @@
       A live thought forum for women
     </span>
 
-    <a href="#ticket-options">
-      View Tickets
+    <a href="#live-dates">
+      View Live Dates
     </a>
 
   </div>
@@ -151,9 +154,9 @@
         <li>
           <a
             data-nav="tickets"
-            href="tickets.html"
+            href="tickets.html#live-dates"
           >
-            Tickets
+            Live
           </a>
         </li>
 
@@ -170,9 +173,9 @@
 
       <a
         class="nav-cta"
-        href="#ticket-options"
+        href="#live-dates"
       >
-        Claim Your Seat
+        View Dates + Cities
       </a>
 
       <button
@@ -207,7 +210,7 @@
         <div class="showcase-copy">
 
           <p class="showcase-eyebrow">
-            Tickets &amp; Partnerships
+            Experience The Third Choice™ Live
           </p>
 
           <div
@@ -220,14 +223,13 @@
           </div>
 
           <h1>
-            Choose how you
-            <em>enter the room.</em>
+            One experience.
+            <em>Different cities.</em>
           </h1>
 
           <p class="showcase-description">
-            Every seat offers access to the full live thought forum.
-            Select the experience that matches the depth of support
-            you want next.
+            A room designed to help you see what you may not see alone.
+            Choose your experience, then find the city that works for you.
           </p>
 
         </div>
@@ -264,77 +266,103 @@
         </small>
 
         <h2>
-          The Access<br>
-          Accelerator
+          The Access
         </h2>
 
-        <strong class="price">
-          <sup>$</sup>50
-        </strong>
-
         <p>
-          Admission to the complete 120-minute main-stage experience.
+          Your seat inside The Third Choice™ live experience.
         </p>
 
         <ul>
-          <li>Live thought forum admission</li>
-          <li>All three featured keynotes</li>
+          <li>The complete main-stage experience</li>
+          <li>Three featured perspectives</li>
+          <li>The live thought forum</li>
           <li>Guided collective activation</li>
-          <li>Limited to 120 seats</li>
         </ul>
+
+        <p><em>Come ready to notice differently, explore what’s possible, and consider your Third Choice™.</em></p>
 
         <a
           class="btn btn-outline"
-          href="https://www.eventbrite.com/e/1998169626141?aff=oddtdtcreator"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#live-dates"
         >
-          Purchase General Access
+          View Dates + Cities
         </a>
 
       </article>
 
       <article class="ticket featured">
 
-        <b>
-          ONLY 30 AVAILABLE
-        </b>
-
         <small>
           VIP EXPERIENCE
         </small>
 
         <h2>
-          The Imperial<br>
-          Blueprint
+          The Third Choice™<br>
+          VIP Experience
         </h2>
 
-        <strong class="price">
-          <sup>$</sup>250
-        </strong>
-
         <p>
-          Go beyond the room with continued strategy and reflection.
+          <strong>Go beyond the room.</strong>
         </p>
 
         <ul>
-          <li>Front-row VIP seating</li>
-          <li>Private virtual strategic lab</li>
-          <li>Lab held seven days later</li>
+          <li>Priority VIP seating</li>
           <li>The Third Choice™ Action Guide</li>
+          <li>Exclusive access to a post-experience Strategy Lab</li>
         </ul>
+
+        <p><em>More space to explore what’s possible, consider your Third Choice™, and continue the conversation beyond the room.</em></p>
 
         <a
           class="btn btn-lime"
-          href="https://www.eventbrite.com/e/1998169626141?aff=oddtdtcreator"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#live-dates"
         >
-          Purchase VIP Access
+          Explore VIP Access
         </a>
 
       </article>
 
+    </section>
+
+    <section class="live-dates" id="live-dates">
+      <header class="live-dates-header">
+        <p class="eyebrow">The Third Choice™ — Live</p>
+        <h2>Where we’re going next.</h2>
+        <p>Different cities. One conversation that meets you where you are.</p>
+      </header>
+
+      <div class="city-grid">
+        <article class="city-card featured-city">
+          <div><span class="city-number">01 / NOW BOARDING</span><h3>Cleveland</h3><p>October 16, 2026</p></div>
+          <a class="btn btn-lime" href="https://www.eventbrite.com/e/1998169626141?aff=oddtdtcreator" target="_blank" rel="noopener noreferrer">Get Tickets</a>
+        </article>
+
+        <article class="city-card">
+          <div><span class="city-number">02 / COMING SOON</span><h3>Atlanta</h3><p>Dates to be announced</p></div>
+          <button class="btn btn-outline notify-trigger" type="button" data-city="Atlanta">Be The First To Know</button>
+        </article>
+
+        <article class="city-card">
+          <div><span class="city-number">03 / COMING SOON</span><h3>Chicago</h3><p>Dates to be announced</p></div>
+          <button class="btn btn-outline notify-trigger" type="button" data-city="Chicago">Be The First To Know</button>
+        </article>
+
+        <article class="city-card">
+          <div><span class="city-number">04 / COMING SOON</span><h3>Houston</h3><p>Dates to be announced</p></div>
+          <button class="btn btn-outline notify-trigger" type="button" data-city="Houston">Be The First To Know</button>
+        </article>
+
+        <article class="city-card">
+          <div><span class="city-number">05 / COMING SOON</span><h3>Philadelphia</h3><p>Dates to be announced</p></div>
+          <button class="btn btn-outline notify-trigger" type="button" data-city="Philadelphia">Be The First To Know</button>
+        </article>
+
+        <article class="city-card">
+          <div><span class="city-number">06 / COMING SOON</span><h3>Miami</h3><p>Dates to be announced</p></div>
+          <button class="btn btn-outline notify-trigger" type="button" data-city="Miami">Be The First To Know</button>
+        </article>
+      </div>
     </section>
 
     <!-- PARTNERSHIP SECTION -->
@@ -396,102 +424,279 @@
 
     </section>
 
-    <!-- EVENT DETAILS -->
+  </main>
 
-    <section class="event-details">
+  <dialog class="notify-dialog" id="notify-dialog">
+    <form class="notify-form" action="https://formsubmit.co/thirdchoicecle@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Third Choice city interest signup">
+      <input type="hidden" name="_captcha" value="false">
 
-      <div>
+      <p class="eyebrow">Be The First To Know</p>
+      <h2 id="notify-title">Join the city list.</h2>
+      <p>Be among the first to hear when tickets and details are released.</p>
 
-        <p class="eyebrow">
-          Before you reserve
+      <label for="notify-name">First Name</label>
+      <input id="notify-name" name="first_name" type="text" autocomplete="given-name" required>
+
+      <label for="notify-email">Email</label>
+      <input id="notify-email" name="email" type="email" autocomplete="email" required>
+
+      <label for="notify-city">City</label>
+      <input id="notify-city" name="city" type="text" readonly required>
+
+      <div class="notify-actions">
+        <button class="btn btn-lime" type="submit">Notify Me</button>
+        <button class="dialog-close" type="button">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+ <!-- EDITORIAL FOOTER -->
+
+  <footer class="tc-footer">
+
+    <!-- TICKET INVITATION -->
+
+    <section class="tc-footer-invitation">
+
+      <div class="tc-invitation-copy">
+
+        <p>
+          THE EXPERIENCE AWAITS
         </p>
 
         <h2>
-          Event details
+          What if your next choice is the one
+          you haven’t considered yet?
         </h2>
 
       </div>
 
-      <dl>
-
-        <div>
-          <dt>Date</dt>
-          <dd>October 16, 2026</dd>
-        </div>
-
-        <div>
-          <dt>Location</dt>
-          <dd>Tinkham Veale University Center</dd>
-        </div>
-
-        <div>
-          <dt>Time</dt>
-          <dd>6:30-8:30</dd>
-        </div>
-
-        <div>
-          <dt>Attire</dt>
-          <dd>Elevated Business Casual come polish, comfortable, and in a way that reflects your personal style.  </dd>
-        </div>
-
-      </dl>
+      <a
+        href="tickets.html#live-dates"
+        class="tc-ticket-button"
+      >
+        VIEW DATES + CITIES
+      </a>
 
     </section>
 
-  </main>
+    <!-- MAIN FOOTER -->
 
-  <footer class="site-footer">
-
-    <div>
+    <section class="tc-footer-main">
 
       <a
-        class="brand footer-brand"
         href="index.html"
+        class="tc-large-logo"
       >
-      THE THIRD <em>CHOICE</em><sup>™</sup>
+        THE THIRD CHOICE<sup>™</sup>
       </a>
 
-      <p>
-        There is another way.
-      </p>
+      <div
+        class="tc-gold-line"
+        aria-hidden="true"
+      ></div>
 
-    </div>
+      <div class="tc-footer-content">
 
-    <div class="footer-nav">
+        <!-- SMALL BRAND SYMBOL -->
 
-      <a href="experience.html">
-        The Experience
-      </a>
+        <div class="tc-brand-column">
 
-      <a href="schedule.html">
-        Schedule
-      </a>
+          <a
+            href="index.html"
+            class="tc-symbol"
+            aria-label="The Third Choice home"
+          >
+            <span>T</span>
+            <span>C</span>
+          </a>
 
-      <a href="tickets.html">
-        Tickets
-      </a>
+          <p>
+            A SOPHISTICATED<br>
+            LIVE THOUGHT FORUM<br>
+            FOR WOMEN.
+          </p>
 
-      <a href="contact.html">
-        Contact
-      </a>
+        </div>
 
-    </div>
+        <!-- EXPLORE LINKS -->
 
-    <div class="footer-bottom">
+        <nav
+          class="tc-footer-column"
+          aria-label="Explore"
+        >
 
-      <span>
-        © 2026 The Third Choice™
-      </span>
+          <h3>
+            EXPLORE
+          </h3>
 
-      <a href="#main">
-        Back to top ↑
-      </a>
+          <a href="index.html">
+            Home
+          </a>
 
-    </div>
+          <a href="experience.html">
+            The Experience
+          </a>
+
+          <a href="schedule.html">
+            Schedule
+          </a>
+
+          <a href="tickets.html#live-dates">
+            Live
+          </a>
+
+        </nav>
+
+        <!-- INFORMATION LINKS -->
+
+        <nav
+          class="tc-footer-column"
+          aria-label="Information"
+        >
+
+          <h3>
+            INFORMATION
+          </h3>
+
+          <a href="contact.html">
+            Contact
+          </a>
+
+          <a href="disclaimer.html">
+            Disclaimer
+          </a>
+
+          <a href="sitemap.html">
+            Site Map
+          </a>
+
+        </nav>
+
+        <!-- CONNECT LINKS -->
+
+        <div class="tc-footer-column">
+
+          <h3>
+            CONNECT
+          </h3>
+
+          <a
+            href="https://www.instagram.com/the.third.choice?igsi=MWZ2ZWYzNTJ5ODBuMg=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>   
+          <a href="mailto:thirdchoicecle.com">
+            Email
+          </a>
+
+        </div>
+
+        <!-- SOCIAL ICONS -->
+
+        <div class="tc-social-column">
+
+          <a
+            href="https://www.instagram.com/the.third.choice?igsi=MWZ2ZWYzNTJ5ODBuMg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i
+              class="bx bxl-instagram"
+              aria-hidden="true"
+            ></i>
+          </a>
+ 
+
+          <a
+            href="mailto:thirdchoicecle@gmail.com"
+            aria-label="Email"
+          >
+            <i
+              class="bx bx-envelope"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div
+        class="tc-gold-line tc-bottom-line"
+        aria-hidden="true"
+      ></div>
+
+      <div class="tc-copyright">
+
+        <p>
+          &copy; 2026 The Third Choice™. All rights reserved.
+        </p>
+        
+  <p>
+    Website designed and developed by
+    <strong>Logan Pride</strong>
+  </p>
+
+  <div class="developer-links">
+
+    <a
+      href="https://c0derlp.github.io/ "
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="bx bx-globe"></i>
+      Portfolio
+    </a>
+
+    <span aria-hidden="true">|</span>
+
+    <a
+      href="https://www.linkedin.com/in/logan-pride-65651523a/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="bx bxl-linkedin"></i>
+      LinkedIn
+    </a>
+
+  </div>
+
+      </div>
+
+    </section>
 
   </footer>
 
   <script src="script.js"></script>
+
+  <script>
+    const notifyDialog = document.querySelector("#notify-dialog");
+    const notifyCity = document.querySelector("#notify-city");
+    const notifyTitle = document.querySelector("#notify-title");
+
+    document.querySelectorAll(".notify-trigger").forEach((button) => {
+      button.addEventListener("click", () => {
+        const city = button.dataset.city;
+        notifyCity.value = city;
+        notifyTitle.textContent = `${city} is coming.`;
+        notifyDialog.showModal();
+      });
+    });
+
+    document.querySelector(".dialog-close").addEventListener("click", () => {
+      notifyDialog.close();
+    });
+
+    notifyDialog.addEventListener("click", (event) => {
+      if (event.target === notifyDialog) {
+        notifyDialog.close();
+      }
+    });
+  </script>
 
 </body>
 
