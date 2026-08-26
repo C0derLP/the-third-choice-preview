@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Explore every page and resource available on The Third Choice™ website."
+  >
+
+  <title>Site Map | The Third Choice™</title>
+
+  <link
+    rel="icon"
+    type="image/jpeg"
+    href="images/icon.jpg?v=3"
+  >
+
+  <link
+    rel="shortcut icon"
+    href="images/icon.jpg?v=3"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+  <!-- SITE MAP PAGE STYLING -->
+
+  <style>
+    .sitemap-hero {
+      position: relative;
+      display: grid;
+      min-height: 440px;
+      place-items: center;
+      overflow: hidden;
+      padding: 90px 30px;
+      background:
+        linear-gradient(
+          rgba(245, 240, 231, 0.18),
+          rgba(245, 240, 231, 0.30)
+        ),
+        url("images/sitemap-neautral.jpg") center / cover no-repeat;
+      color: #171715;
+      text-align: center;
+    }
+
+    .sitemap-hero::before {
+      content: "";
+      position: absolute;
+      inset: 24px;
+      border: 1px solid rgba(140, 107, 53, 0.65);
+      pointer-events: none;
+    }
+
+    .sitemap-hero-content {
+      position: relative;
+      z-index: 1;
+      width: min(760px, 100%);
+    }
+
+    .sitemap-hero .eyebrow {
+      margin: 0 0 18px;
+      color: #8c6b35;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+
+    .sitemap-hero h1 {
+      margin: 0 0 22px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      font-weight: 500;
+      line-height: 0.95;
+    }
+
+    .sitemap-hero h1 em {
+      color: #9a763c;
+      font-weight: 500;
+    }
+
+    .sitemap-hero-content > p:last-child {
+      max-width: 630px;
+      margin: 0 auto;
+      color: #4f4a43;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .sitemap-directory {
+      padding: 100px clamp(24px, 7vw, 120px);
+      background: #f5f0e7;
+      color: #171715;
+    }
+
+    .sitemap-introduction {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      gap: 70px;
+      max-width: 1200px;
+      margin: 0 auto 70px;
+      padding-bottom: 55px;
+      border-bottom: 1px solid rgba(183, 146, 80, 0.45);
+    }
+
+    .sitemap-introduction .eyebrow {
+      margin: 0 0 15px;
+      color: #8c6b35;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .sitemap-introduction h2 {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.3rem, 4vw, 4.3rem);
+      font-weight: 500;
+      line-height: 1.05;
+    }
+
+    .sitemap-introduction h2 em {
+      color: #a27f44;
+      font-weight: 500;
+    }
+
+    .sitemap-introduction > p {
+      align-self: end;
+      max-width: 580px;
+      margin: 0;
+      color: #5f5b54;
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+
+    .sitemap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .sitemap-card {
+      position: relative;
+      min-height: 430px;
+      padding: 42px 36px;
+      border: 1px solid rgba(183, 146, 80, 0.45);
+      background: #fbf8f2;
+      transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+    }
+
+    .sitemap-card:hover {
+      background: #171715;
+      color: #f5f0e7;
+      transform: translateY(-6px);
+    }
+
+    .sitemap-card-number {
+      display: block;
+      margin-bottom: 32px;
+      color: #a27f44;
+      font-family: "Playfair Display", serif;
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    .sitemap-card h2 {
+      margin: 0 0 27px;
+      font-family: "Playfair Display", serif;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    .sitemap-card ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .sitemap-card li {
+      padding: 15px 0;
+      border-top: 1px solid rgba(183, 146, 80, 0.28);
+    }
+
+    .sitemap-card li:last-child {
+      border-bottom: 1px solid rgba(183, 146, 80, 0.28);
+    }
+
+    .sitemap-card a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      color: inherit;
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .sitemap-card a::after {
+      content: "↗";
+      flex: 0 0 auto;
+      color: #a27f44;
+      font-size: 1rem;
+      transition: transform 0.25s ease;
+    }
+
+    .sitemap-card a:hover {
+      color: #c4a66f;
+    }
+
+    .sitemap-card a:hover::after {
+      transform: translate(3px, -3px);
+    }
+
+    .sitemap-help {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 45px;
+      max-width: 1200px;
+      margin: 80px auto 0;
+      padding: 50px;
+      background: #b79250;
+      color: #171715;
+    }
+
+    .sitemap-help p {
+      margin: 0 0 10px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .sitemap-help h2 {
+      max-width: 700px;
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      font-weight: 500;
+      line-height: 1.05;
+    }
+
+    .sitemap-help-button {
+      display: inline-flex;
+      min-width: 180px;
+      min-height: 58px;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 28px;
+      border: 1px solid #171715;
+      border-radius: 999px;
+      background: #171715;
+      color: #f5f0e7;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+    }
+
+    .sitemap-help-button:hover {
+      background: transparent;
+      color: #171715;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 900px) {
+      .sitemap-introduction {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .sitemap-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .sitemap-card:last-child {
+        grid-column: 1 / -1;
+      }
+
+      .sitemap-help {
+        grid-template-columns: 1fr;
+      }
+
+      .sitemap-help-button {
+        width: fit-content;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .sitemap-hero {
+        min-height: 360px;
+        padding: 70px 24px;
+      }
+
+      .sitemap-hero::before {
+        inset: 14px;
+      }
+
+      .sitemap-directory {
+        padding: 70px 24px;
+      }
+
+      .sitemap-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sitemap-card,
+      .sitemap-card:last-child {
+        grid-column: auto;
+        min-height: auto;
+      }
+
+      .sitemap-help {
+        margin-top: 55px;
+        padding: 38px 26px;
+      }
+
+      .sitemap-help-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body data-page="sitemap">
+
+  <a
+    class="skip-link"
+    href="#main"
+  >
+    Skip to content
+  </a>
+
+  <!-- ANNOUNCEMENT -->
+
+  <div class="announcement">
+
+    <span>
+      A live thought forum for women
+    </span>
+
+    <a href="tickets.html">
+      View Tickets
+    </a>
+
+  </div>
+
+  <!-- HEADER -->
+
+  <header class="site-header">
+
+    <nav
+      class="nav-shell"
+      aria-label="Main navigation"
+    >
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+        THE THIRD <em>CHOICE</em><sup>™</sup>
+      </a>
+
+      <ul
+        class="main-nav"
+        id="main-nav"
+      >
+
+        <li>
+          <a
+            data-nav="home"
+            href="index.html"
+          >
+            Home
+          </a>
+        </li>
+
+        <li class="has-dropdown">
+
+          <a
+            data-nav="experience"
+            href="experience.html"
+          >
+            The Experience
+          </a>
+
+          <button
+            class="dropdown-toggle"
+            type="button"
+            aria-label="Open Experience menu"
+            aria-expanded="false"
+          >
+            ⌄
+          </button>
+
+          <ul class="dropdown">
+
+            <li>
+              <a href="experience.html">
+                Overview
+              </a>
+            </li>
+
+            <li>
+              <a href="experience.html#founders">
+                Meet the Founders
+              </a>
+            </li>
+
+            <li>
+              <a href="schedule.html">
+                Schedule &amp; Activation
+              </a>
+            </li>
+
+            <li>
+              <a href="experience.html#questions">
+                Questions Worth Asking
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li>
+          <a
+            data-nav="tickets"
+            href="tickets.html"
+          >
+            Tickets
+          </a>
+        </li>
+
+        <li>
+          <a
+            data-nav="contact"
+            href="contact.html"
+          >
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+      <a
+        class="nav-cta"
+        href="tickets.html"
+      >
+        Claim Your Seat
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <i
+          class="bx bx-menu"
+          aria-hidden="true"
+        ></i>
+      </button>
+
+    </nav>
+
+  </header>
+
+  <main id="main">
+
+    <!-- SITE MAP HERO -->
+
+    <section class="sitemap-hero">
+
+      <div class="sitemap-hero-content">
+
+        <p class="eyebrow">
+          Explore the experience
+        </p>
+
+        <h1>
+          Site <em>Map</em>
+        </h1>
+
+        <p>
+          Discover every part of The Third Choice™ experience,
+          from our vision and featured voices to ticket options,
+          event information, and ways to connect.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- WEBSITE DIRECTORY -->
+
+    <section class="sitemap-directory">
+
+      <div class="sitemap-introduction">
+
+        <div>
+
+          <p class="eyebrow">
+            Navigate with intention
+          </p>
+
+          <h2>
+            Find your way.<br>
+            Discover <em>more.</em>
+          </h2>
+
+        </div>
+
+        <p>
+          Use this directory to explore the complete
+          The Third Choice™ website. Each destination is
+          designed to help you understand the experience,
+          meet its visionaries, reserve your seat, or connect
+          with our team.
+        </p>
+
+      </div>
+
+      <div class="sitemap-grid">
+
+        <!-- MAIN PAGES -->
+
+        <article class="sitemap-card">
+
+          <span class="sitemap-card-number">
+            01
+          </span>
+
+          <h2>
+            Main Pages
+          </h2>
+
+          <ul>
+
+            <li>
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="experience.html">
+                The Experience
+              </a>
+            </li>
+
+            <li>
+              <a href="schedule.html">
+                Schedule &amp; Activation
+              </a>
+            </li>
+
+            <li>
+              <a href="tickets.html">
+                Tickets
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </article>
+
+        <!-- EXPERIENCE -->
+
+        <article class="sitemap-card">
+
+          <span class="sitemap-card-number">
+            02
+          </span>
+
+          <h2>
+            The Experience
+          </h2>
+
+          <ul>
+
+            <li>
+              <a href="experience.html">
+                Experience Overview
+              </a>
+            </li>
+
+            <li>
+              <a href="experience.html#founders">
+                Meet the Founders
+              </a>
+            </li>
+
+            <li>
+              <a href="experience.html#questions">
+                Questions Worth Asking
+              </a>
+            </li>
+
+            <li>
+              <a href="schedule.html">
+                Event Schedule
+              </a>
+            </li>
+
+            <li>
+              <a href="tickets.html">
+                Ticket Experiences
+              </a>
+            </li>
+
+          </ul>
+
+        </article>
+
+        <!-- INFORMATION -->
+
+        <article class="sitemap-card">
+
+          <span class="sitemap-card-number">
+            03
+          </span>
+
+          <h2>
+            Information
+          </h2>
+
+          <ul>
+
+            <li>
+              <a href="contact.html">
+                Contact the Team
+              </a>
+            </li>
+
+            <li>
+              <a href="disclaimer.html">
+                Website Disclaimer
+              </a>
+            </li>
+
+            <li>
+              <a href="sitemap.html">
+                Site Map
+              </a>
+            </li>
+
+            <li>
+              <a href="tickets.html">
+                View Ticket Options
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="mailto:thirdchoice@gmail.com"
+              >
+                Email The Third Choice
+              </a>
+            </li>
+
+          </ul>
+
+        </article>
+
+      </div>
+
+      <!-- HELP SECTION -->
+
+      <div class="sitemap-help">
+
+        <div>
+
+          <p>
+            Still searching?
+          </p>
+
+          <h2>
+            Our team would love to help you find what you need.
+          </h2>
+
+        </div>
+
+        <a
+          class="sitemap-help-button"
+          href="contact.html"
+        >
+          Contact Us
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- EDITORIAL FOOTER -->
+
+  <footer class="tc-footer">
+
+    <!-- TICKET INVITATION -->
+
+    <section class="tc-footer-invitation">
+
+      <div class="tc-invitation-copy">
+
+        <p>
+          THE EXPERIENCE AWAITS
+        </p>
+
+        <h2>
+          What if your next choice is the one
+          you haven’t considered yet?
+        </h2>
+
+      </div>
+
+      <a
+        href="tickets.html"
+        class="tc-ticket-button"
+      >
+        VIEW TICKETS
+      </a>
+
+    </section>
+
+    <!-- MAIN FOOTER -->
+
+    <section class="tc-footer-main">
+
+      <a
+        href="index.html"
+        class="tc-large-logo"
+      >
+        THE THIRD CHOICE<sup>™</sup>
+      </a>
+
+      <div
+        class="tc-gold-line"
+        aria-hidden="true"
+      ></div>
+
+      <div class="tc-footer-content">
+
+        <!-- SMALL BRAND SYMBOL -->
+
+        <div class="tc-brand-column">
+
+          <a
+            href="index.html"
+            class="tc-symbol"
+            aria-label="The Third Choice home"
+          >
+            <span>T</span>
+            <span>C</span>
+          </a>
+
+          <p>
+            A SOPHISTICATED<br>
+            LIVE THOUGHT FORUM<br>
+            FOR WOMEN.
+          </p>
+
+        </div>
+
+        <!-- EXPLORE LINKS -->
+
+        <nav
+          class="tc-footer-column"
+          aria-label="Explore"
+        >
+
+          <h3>
+            EXPLORE
+          </h3>
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <a href="experience.html">
+            The Experience
+          </a>
+
+          <a href="schedule.html">
+            Schedule
+          </a>
+
+          <a href="tickets.html">
+            Tickets
+          </a>
+
+        </nav>
+
+        <!-- INFORMATION LINKS -->
+
+        <nav
+          class="tc-footer-column"
+          aria-label="Information"
+        >
+
+          <h3>
+            INFORMATION
+          </h3>
+
+          <a href="contact.html">
+            Contact
+          </a>
+
+          <a href="disclaimer.html">
+            Disclaimer
+          </a>
+
+          <a href="sitemap.html">
+            Site Map
+          </a>
+
+        </nav>
+
+        <!-- CONNECT LINKS -->
+
+        <div class="tc-footer-column">
+
+          <h3>
+            CONNECT
+          </h3>
+
+          <a
+            href="https://www.instagram.com/the.third.choice?igsi=MWZ2ZWYzNTJ5ODBuMg=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+
+          <a href="mailto:thirdchoice@gmail.com">
+            Email
+          </a>
+
+        </div>
+
+        <!-- SOCIAL ICONS -->
+
+        <div class="tc-social-column">
+
+          <a
+            href="https://www.instagram.com/the.third.choice?igsi=MWZ2ZWYzNTJ5ODBuMg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i
+              class="bx bxl-instagram"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+          <a
+            href="mailto:thirdchoice@gmail.com"
+            aria-label="Email"
+          >
+            <i
+              class="bx bx-envelope"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div
+        class="tc-gold-line tc-bottom-line"
+        aria-hidden="true"
+      ></div>
+
+      <div class="tc-copyright">
+
+        <p>
+          &copy; 2026 The Third Choice™. All rights reserved.
+        </p>
+        <div class="developer-credit">
+
+  <p>
+    Website designed and developed by
+    <strong>Logan Pride</strong>
+  </p>
+
+  <div class="developer-links">
+
+    <a
+      href="https://c0derlp.github.io/ "
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="bx bx-globe"></i>
+      Portfolio
+    </a>
+
+    <span aria-hidden="true">|</span>
+
+    <a
+      href="https://www.linkedin.com/in/logan-pride-65651523a/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="bx bxl-linkedin"></i>
+      LinkedIn
+    </a>
+
+  </div>
+
+      </div>
+
+    </section>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
