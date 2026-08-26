@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Review the website and event disclaimer for The Third Choice™."
+  >
+
+  <title>Disclaimer | The Third Choice™</title>
+
+  <link
+    rel="icon"
+    type="image/jpeg"
+    href="images/icon.jpg?v=3"
+  >
+
+  <link
+    rel="shortcut icon"
+    href="images/icon.jpg?v=3"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+  <!-- DISCLAIMER PAGE STYLING -->
+
+  <style>
+    .disclaimer-hero {
+      position: relative;
+      display: grid;
+      min-height: 440px;
+      place-items: center;
+      overflow: hidden;
+      padding: 90px 30px;
+      background:
+        linear-gradient(
+          rgba(245, 240, 231, 0.18),
+          rgba(245, 240, 231, 0.30)
+        ),
+        url("images/sitemap-neautral.jpg") center / cover no-repeat;
+      color: #171715;
+      text-align: center;
+    }
+
+    .disclaimer-hero::before {
+      content: "";
+      position: absolute;
+      inset: 24px;
+      border: 1px solid rgba(140, 107, 53, 0.65);
+      pointer-events: none;
+    }
+
+    .disclaimer-hero-content {
+      position: relative;
+      z-index: 1;
+      width: min(800px, 100%);
+    }
+
+    .disclaimer-hero .eyebrow {
+      margin: 0 0 18px;
+      color: #8c6b35;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+
+    .disclaimer-hero h1 {
+      margin: 0 0 22px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      font-weight: 500;
+      line-height: 0.95;
+    }
+
+    .disclaimer-hero h1 em {
+      color: #9a763c;
+      font-weight: 500;
+    }
+
+    .disclaimer-hero-content > p:last-child {
+      max-width: 650px;
+      margin: 0 auto;
+      color: #4f4a43;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .disclaimer-page {
+      padding: 100px clamp(24px, 7vw, 120px);
+      background: #f5f0e7;
+      color: #171715;
+    }
+
+    .disclaimer-layout {
+      display: grid;
+      grid-template-columns: minmax(220px, 0.35fr) minmax(0, 1fr);
+      gap: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .disclaimer-sidebar {
+      align-self: start;
+      position: sticky;
+      top: 130px;
+    }
+
+    .disclaimer-sidebar .eyebrow {
+      margin: 0 0 18px;
+      color: #a27f44;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .disclaimer-sidebar h2 {
+      margin: 0 0 22px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.2rem, 4vw, 3.7rem);
+      font-weight: 500;
+      line-height: 1.05;
+    }
+
+    .disclaimer-sidebar h2 em {
+      color: #a27f44;
+      font-weight: 500;
+    }
+
+    .disclaimer-updated {
+      margin: 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(183, 146, 80, 0.45);
+      color: #6b665e;
+      font-size: 0.75rem;
+      line-height: 1.7;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .disclaimer-content {
+      padding: 55px;
+      border: 1px solid rgba(183, 146, 80, 0.4);
+      background: #fbf8f2;
+    }
+
+    .disclaimer-introduction {
+      margin: 0 0 45px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(183, 146, 80, 0.4);
+      color: #3e3b36;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.35rem, 2.4vw, 2rem);
+      line-height: 1.55;
+    }
+
+    .disclaimer-section {
+      display: grid;
+      grid-template-columns: 52px minmax(0, 1fr);
+      gap: 25px;
+      padding: 38px 0;
+      border-bottom: 1px solid rgba(183, 146, 80, 0.28);
+    }
+
+    .disclaimer-section:first-of-type {
+      padding-top: 0;
+    }
+
+    .disclaimer-section:last-of-type {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .disclaimer-number {
+      color: #a27f44;
+      font-family: "Playfair Display", serif;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    .disclaimer-section h2 {
+      margin: 0 0 16px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.6rem, 3vw, 2.3rem);
+      font-weight: 500;
+    }
+
+    .disclaimer-section p {
+      margin: 0 0 16px;
+      color: #5f5b54;
+      font-size: 0.96rem;
+      line-height: 1.85;
+    }
+
+    .disclaimer-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .disclaimer-section a {
+      color: #8c6b35;
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    .disclaimer-section a:hover {
+      color: #171715;
+    }
+
+    .disclaimer-contact {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 45px;
+      max-width: 1200px;
+      margin: 80px auto 0;
+      padding: 50px;
+      background: #b79250;
+      color: #171715;
+    }
+
+    .disclaimer-contact p {
+      margin: 0 0 10px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .disclaimer-contact h2 {
+      max-width: 720px;
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      font-weight: 500;
+      line-height: 1.05;
+    }
+
+    .disclaimer-contact-button {
+      display: inline-flex;
+      min-width: 180px;
+      min-height: 58px;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 28px;
+      border: 1px solid #171715;
+      border-radius: 999px;
+      background: #171715;
+      color: #f5f0e7;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+    }
+
+    .disclaimer-contact-button:hover {
+      background: transparent;
+      color: #171715;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 900px) {
+      .disclaimer-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .disclaimer-sidebar {
+        position: static;
+      }
+
+      .disclaimer-contact {
+        grid-template-columns: 1fr;
+      }
+
+      .disclaimer-contact-button {
+        width: fit-content;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .disclaimer-hero {
+        min-height: 360px;
+        padding: 70px 24px;
+      }
+
+      .disclaimer-hero::before {
+        inset: 14px;
+      }
+
+      .disclaimer-page {
+        padding: 70px 24px;
+      }
+
+      .disclaimer-content {
+        padding: 35px 24px;
+      }
+
+      .disclaimer-section {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .disclaimer-contact {
+        margin-top: 55px;
+        padding: 38px 26px;
+      }
+
+      .disclaimer-contact-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body data-page="disclaimer">
+
+  <a
+    class="skip-link"
+    href="#main"
+  >
+    Skip to content
+  </a>
+
+  <!-- ANNOUNCEMENT -->
+
+  <div class="announcement">
+
+    <span>
+      A live thought forum for women
+    </span>
+
+    <a href="tickets.html">
+      View Tickets
+    </a>
+
+  </div>
+
+  <!-- HEADER -->
+
+  <header class="site-header">
+
+    <nav
+      class="nav-shell"
+      aria-label="Main navigation"
+    >
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+        THE THIRD <em>CHOICE</em><sup>™</sup>
+      </a>
+
+      <ul
+        class="main-nav"
+        id="main-nav"
+      >
+
+        <li>
+          <a
+            data-nav="home"
+            href="index.html"
+          >
+            Home
+          </a>
+        </li>
+
+        <li class="has-dropdown">
+
+          <a
+            data-nav="experience"
+            href="experience.html"
+          >
+            The Experience
+          </a>
+
+          <button
+            class="dropdown-toggle"
+            type="button"
+            aria-label="Open Experience menu"
+            aria-expanded="false"
+          >
+            ⌄
+          </button>
+
+          <ul class="dropdown">
+
+            <li>
+              <a href="experience.html">
+                Overview
+              </a>
+            </li>
+
+            <li>
+              <a href="experience.html#founders">
+                Meet the Founders
+              </a>
+            </li>
+
+            <li>
+              <a href="schedule.html">
+                Schedule &amp; Activation
+              </a>
+            </li>
+
+            <li>
+              <a href="experience.html#questions">
+                Questions Worth Asking
+              </a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li>
+          <a
+            data-nav="tickets"
+            href="tickets.html"
+          >
+            Tickets
+          </a>
+        </li>
+
+        <li>
+          <a
+            data-nav="contact"
+            href="contact.html"
+          >
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+      <a
+        class="nav-cta"
+        href="tickets.html"
+      >
+        Claim Your Seat
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <i
+          class="bx bx-menu"
+          aria-hidden="true"
+        ></i>
+      </button>
+
+    </nav>
+
+  </header>
+
+  <main id="main">
+
+    <!-- DISCLAIMER HERO -->
+
+    <section class="disclaimer-hero">
+
+      <div class="disclaimer-hero-content">
+
+        <p class="eyebrow">
+          Important information
+        </p>
+
+        <h1>
+          Website <em>Disclaimer</em>
+        </h1>
+
+        <p>
+          Please review this information regarding the use of
+          The Third Choice™ website, event experiences, resources,
+          and related content.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- DISCLAIMER CONTENT -->
+
+    <section class="disclaimer-page">
+
+      <div class="disclaimer-layout">
+
+        <aside class="disclaimer-sidebar">
+
+          <p class="eyebrow">
+            Before you continue
+          </p>
+
+          <h2>
+            Information with<br>
+            <em>intention.</em>
+          </h2>
+
+          <p class="disclaimer-updated">
+            Last updated<br>
+            August 22, 2026
+          </p>
+
+        </aside>
+
+        <div class="disclaimer-content">
+
+          <p class="disclaimer-introduction">
+            The Third Choice™ provides experiences and resources
+            intended to encourage meaningful conversation, personal
+            reflection, strategic thinking, and expanded possibility.
+            By using this website, you acknowledge the following
+            information and limitations.
+          </p>
+
+          <!-- GENERAL INFORMATION -->
+
+          <article class="disclaimer-section">
+
+            <span class="disclaimer-number">
+              01
+            </span>
+
+            <div>
+
+              <h2>
+                General Information
+              </h2>
+
+              <p>
+                The information presented on this website is provided
+                for general informational, educational, and
+                inspirational purposes. We work to keep website content
+                accurate and current, but we do not guarantee that every
+                statement, date, price, description, or other detail will
+                always be complete, current, or free from error.
+              </p>
+
+              <p>
+                Website content may be revised, corrected, expanded, or
+                removed at any time without prior notice.
+              </p>
+
+            </div>
+
+          </article>
+
+          <!-- PROFESSIONAL ADVICE -->
+
+          <article class="disclaimer-section">
+
+            <span class="disclaimer-number">
+              02
+            </span>
+
+            <div>
+
+              <h2>
+                Educational and Inspirational Content
+              </h2>
+
+              <p>
+                The Third Choice™ offers experiences designed to
+                encourage personal reflection, meaningful conversation,
+                strategic thinking, leadership, and personal development.
+              </p>
+
+              <p>
+                Nothing presented through this website, an event,
+                presentation, workshop, strategic lab, action guide, or
+                related resource should be considered medical,
+                mental-health, legal, financial, or other professional
+                advice.
+              </p>
+
+              <p>
+                You should consult an appropriately qualified
+                professional before making decisions that require
+                specialized advice.
+              </p>
+
+            </div>
+
+          </article>
+
+          <!-- RESULTS -->
+
+          <article class="disclaimer-section">
+
+            <span class="disclaimer-number">
+              03
+            </span>
+
+            <div>
+
+              <h2>
+                No Guaranteed Results
+              </h2>
+
+              <p>
+                Individual experiences and results will vary.
+                Participation in The Third Choice™ does not guarantee a
+                particular personal, professional, financial, business,
+                or organizational outcome.
+              </p>
+
+              <p>
+                Each participant remains responsible for their own
+                decisions, actions, implementation, and results.
+              </p>
+
+            </div>
+
+          </article>
+
+          <!-- SPEAKERS -->
+
+          <article class="disclaimer-section">
+
+            <span class="disclaimer-number">
+              04
+            </span>
+
+            <div>
+
+              <h2>
+                Speakers and Contributors
+              </h2>
+
+              <p>
+                The views and opinions expressed by speakers, guests,
+                contributors, partners, vendors, or participants are
+                their own. Those views do not necessarily represent the
+                official position of The Third Choice™ or its organizers.
+              </p>
+
+              <p>
+                The appearance of a speaker, contributor, partner, or
+                outside organization does not automatically constitute
+                an endorsement of every statement, service, product, or
+                position associated with that individual or organization.
+              </p>
+
+            </div>
+
+          </article>
+
+          <!-- EVENT INFORMATION -->
+
+          <article class="disclaimer-section">
+
+            <span class="disclaimer-number">
+              05
+            </span>
+
+            <div>
+
+              <h2>
+                Event Information and Changes
+              </h2>
+
+              <p>
+                Event dates, times, locations, schedules, speakers,
+                activities, benefits, and availability may be modified
+                when reasonably necessary.
+              </p>
+
+              <p>
+                We will make a reasonable effort to communicate
+                significant changes through this website, email, social
+                media, or the ticketing platform used for the event.
+              </p>
+
+            </div>
+
+          </article>
+
+          <!-- TICKETS -->
+
+          <article class="disclaimer-section">
+
+            <span class="disclaimer-number">
+              06
+            </span>
+
+            <div>
+
+              <h2>
+                Tickets and Third-Party Services
+              </h2>
+
+              <p>
+                Ticket purchases may be processed through Eventbrite. Purchases may therefore be
+                subject to that provider’s separate terms, privacy
+                practices, processing requirements, service charges, and
+                refund policies.
+              </p>
+
+              <p>
+                Please carefully review all ticket information and
+                applicable policies before completing a purchase.
+              </p>
+
+            </div>
+
+          </article>
+
+          <!-- EXTERNAL LINKS -->
+
+          <article class="disclaimer-section">
+
+            <span class="disclaimer-number">
+              07
+            </span>
+
+            <div>
+
+              <h2>
+                External Links
+              </h2>
+
+              <p>
+                This website may contain links to third-party websites,
+                platforms, social-media accounts, products, or services.
+                These links are provided for convenience and additional
+                information.
+              </p>
+
+              <p>
+                The Third Choice™ does not control and is not responsible
+                for the content, security, accuracy, availability,
+                products, policies, or practices of outside websites and
+                services.
+              </p>
+
+            </div>
+
+          </article>
+
+          <!-- INTELLECTUAL PROPERTY -->
+
+          <article class="disclaimer-section">
+
+            <span class="disclaimer-number">
+              08
+            </span>
+
+            <div>
+
+              <h2>
+                Intellectual Property
+              </h2>
+
+              <p>
+                Unless otherwise stated, The Third Choice™ name,
+                branding, original wording, graphics, designs, program
+                materials, action guides, event concepts, and other
+                original content are protected intellectual property.
+              </p>
+
+              <p>
+                This content may not be copied, reproduced, republished,
+                distributed, sold, modified, or used for commercial
+                purposes without prior written permission.
+              </p>
+
+            </div>
+
+          </article>
+
+          <!-- RESPONSIBILITY -->
+
+          <article class="disclaimer-section">
+
+            <span class="disclaimer-number">
+              09
+            </span>
+
+            <div>
+
+              <h2>
+                Limitation of Responsibility
+              </h2>
+
+              <p>
+                By using this website or participating in a related
+                experience, you acknowledge that you are responsible for
+                how you interpret and apply the information provided.
+              </p>
+
+              <p>
+                To the fullest extent permitted by applicable law,
+                The Third Choice™ and its organizers are not responsible
+                for losses, damages, or consequences resulting from
+                reliance on website content, third-party services, or
+                participation in an experience.
+              </p>
+
+            </div>
+
+          </article>
+
+          <!-- QUESTIONS -->
+
+          <article class="disclaimer-section">
+
+            <span class="disclaimer-number">
+              10
+            </span>
+
+            <div>
+
+              <h2>
+                Questions
+              </h2>
+
+              <p>
+                If you have questions about this disclaimer, the website,
+                or an upcoming experience, please visit our
+                <a href="contact.html">Contact page</a> or email us at
+                <a href="mailto:thirdchoice@gmail.com">
+                  thirdchoice@gmail.com
+                </a>.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+      <!-- CONTACT INVITATION -->
+
+      <div class="disclaimer-contact">
+
+        <div>
+
+          <p>
+            Need clarification?
+          </p>
+
+          <h2>
+            Connect with our team for additional information.
+          </h2>
+
+        </div>
+
+        <a
+          class="disclaimer-contact-button"
+          href="contact.html"
+        >
+          Contact Us
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- EDITORIAL FOOTER -->
+
+  <footer class="tc-footer">
+
+    <!-- TICKET INVITATION -->
+
+    <section class="tc-footer-invitation">
+
+      <div class="tc-invitation-copy">
+
+        <p>
+          THE EXPERIENCE AWAITS
+        </p>
+
+        <h2>
+          What if your next choice is the one
+          you haven’t considered yet?
+        </h2>
+
+      </div>
+
+      <a
+        href="tickets.html"
+        class="tc-ticket-button"
+      >
+        VIEW TICKETS
+      </a>
+
+    </section>
+
+    <!-- MAIN FOOTER -->
+
+    <section class="tc-footer-main">
+
+      <a
+        href="index.html"
+        class="tc-large-logo"
+      >
+        THE THIRD CHOICE<sup>™</sup>
+      </a>
+
+      <div
+        class="tc-gold-line"
+        aria-hidden="true"
+      ></div>
+
+      <div class="tc-footer-content">
+
+        <!-- SMALL BRAND SYMBOL -->
+
+        <div class="tc-brand-column">
+
+          <a
+            href="index.html"
+            class="tc-symbol"
+            aria-label="The Third Choice home"
+          >
+            <span>T</span>
+            <span>C</span>
+          </a>
+
+          <p>
+            A SOPHISTICATED<br>
+            LIVE THOUGHT FORUM<br>
+            FOR WOMEN.
+          </p>
+
+        </div>
+
+        <!-- EXPLORE LINKS -->
+
+        <nav
+          class="tc-footer-column"
+          aria-label="Explore"
+        >
+
+          <h3>
+            EXPLORE
+          </h3>
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <a href="experience.html">
+            The Experience
+          </a>
+
+          <a href="schedule.html">
+            Schedule
+          </a>
+
+          <a href="tickets.html">
+            Tickets
+          </a>
+
+        </nav>
+
+        <!-- INFORMATION LINKS -->
+
+        <nav
+          class="tc-footer-column"
+          aria-label="Information"
+        >
+
+          <h3>
+            INFORMATION
+          </h3>
+
+          <a href="contact.html">
+            Contact
+          </a>
+
+          <a href="disclaimer.html">
+            Disclaimer
+          </a>
+
+          <a href="sitemap.html">
+            Site Map
+          </a>
+
+        </nav>
+
+        <!-- CONNECT LINKS -->
+
+        <div class="tc-footer-column">
+
+          <h3>
+            CONNECT
+          </h3>
+
+          <a
+            href="https://www.instagram.com/the.third.choice?igsi=MWZ2ZWYzNTJ5ODBuMg=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+
+          <a href="mailto:thirdchoice@gmail.com">
+            Email
+          </a>
+
+        </div>
+
+        <!-- SOCIAL ICONS -->
+
+        <div class="tc-social-column">
+
+          <a
+            href="https://www.instagram.com/the.third.choice?igsi=MWZ2ZWYzNTJ5ODBuMg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i
+              class="bx bxl-instagram"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+          <a
+            href="mailto:thirdchoice@gmail.com"
+            aria-label="Email"
+          >
+            <i
+              class="bx bx-envelope"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div
+        class="tc-gold-line tc-bottom-line"
+        aria-hidden="true"
+      ></div>
+
+      <div class="tc-copyright">
+
+        <p>
+          &copy; 2026 The Third Choice™. All rights reserved.
+        </p>
+        
+  <p>
+    Website designed and developed by
+    <strong>Logan Pride</strong>
+  </p>
+
+  <div class="developer-links">
+
+    <a
+      href="https://c0derlp.github.io/ "
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="bx bx-globe"></i>
+      Portfolio
+    </a>
+
+    <span aria-hidden="true">|</span>
+
+    <a
+      href="https://www.linkedin.com/in/logan-pride-65651523a/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="bx bxl-linkedin"></i>
+      LinkedIn
+    </a>
+
+  </div>
+
+      </div>
+
+    </section>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
