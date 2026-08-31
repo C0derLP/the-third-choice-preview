@@ -53,6 +53,7 @@
     href="style.css"
   >
   <style>
+    .live-dates[hidden]{display:none!important}
     .live-dates{padding:clamp(5rem,9vw,9rem) clamp(1.25rem,5vw,6rem);background:#f6f0e5;color:#173f32}.live-dates-header{width:min(780px,100%);margin:0 auto 3.5rem;text-align:center}.live-dates-header h2{margin:.5rem 0 1rem;font-family:"Playfair Display",serif;font-size:clamp(2.6rem,6vw,5.5rem);line-height:.98}.live-dates-header p:last-child{max-width:620px;margin:0 auto;font-size:clamp(1rem,2vw,1.2rem)}.city-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;width:min(1200px,100%);margin:0 auto}.city-card{min-height:315px;padding:2rem;border:1px solid rgba(157,126,50,.42);background:rgba(255,255,255,.42);display:flex;flex-direction:column;justify-content:space-between;transition:transform 220ms ease,background-color 220ms ease}.city-card:hover{transform:translateY(-5px);background:rgba(255,255,255,.72)}.city-card.featured-city{background:#173f32;color:#fffaf0}.city-number{color:#a48535;font-size:.75rem;letter-spacing:.18em}.city-card h3{margin:1rem 0 .65rem;font-family:"Playfair Display",serif;font-size:clamp(2rem,4vw,3.25rem);font-weight:500}.city-card p{margin:0;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase}.city-card .btn{align-self:flex-start;margin-top:2.25rem}.notify-dialog{width:min(520px,calc(100% - 2rem));padding:0;border:1px solid rgba(157,126,50,.55);background:#f6f0e5;color:#173f32;box-shadow:0 28px 80px rgba(0,0,0,.35)}.notify-dialog::backdrop{background:rgba(11,35,27,.76);backdrop-filter:blur(4px)}.notify-form{padding:clamp(2rem,6vw,3.5rem)}.notify-form h2{margin:.4rem 0 .75rem;font-family:"Playfair Display",serif;font-size:clamp(2rem,6vw,3.4rem);line-height:1}.notify-form>p{margin:0 0 2rem}.notify-form label{display:block;margin-top:1.1rem;font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase}.notify-form input{width:100%;margin-top:.45rem;padding:.9rem 0;border:0;border-bottom:1px solid #6d806f;border-radius:0;background:transparent;color:#173f32;font:inherit}.notify-form input:focus{outline:0;border-bottom-color:#a48535}.notify-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}.dialog-close{border:0;background:transparent;color:#173f32;cursor:pointer;font:inherit;font-weight:600}@media(max-width:900px){.city-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.city-grid{grid-template-columns:1fr}.city-card{min-height:260px}}
   </style>
 </head>
@@ -71,10 +72,6 @@
     <span>
       A live thought forum for women
     </span>
-
-    <a href="#live-dates">
-      View Live Dates
-    </a>
 
   </div>
 
@@ -154,9 +151,9 @@
         <li>
           <a
             data-nav="tickets"
-            href="tickets.html#live-dates"
+            href="tickets.html"
           >
-            Live
+            Tickets
           </a>
         </li>
 
@@ -173,9 +170,11 @@
 
       <a
         class="nav-cta"
-        href="#live-dates"
+        href="https://www.eventbrite.com/e/the-third-choicetm-a-live-thought-forum-for-women-tickets-1998169626141?aff=oddtdtcreator"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        View Dates + Cities
+        Get Tickets
       </a>
 
       <button
@@ -284,9 +283,11 @@
 
         <a
           class="btn btn-outline"
-          href="#live-dates"
+          href="https://www.eventbrite.com/e/the-third-choicetm-a-live-thought-forum-for-women-tickets-1998169626141?aff=oddtdtcreator"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          View Dates + Cities
+          Get Tickets
         </a>
 
       </article>
@@ -316,7 +317,9 @@
 
         <a
           class="btn btn-lime"
-          href="#live-dates"
+          href="https://www.eventbrite.com/e/the-third-choicetm-a-live-thought-forum-for-women-tickets-1998169626141?aff=oddtdtcreator"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Explore VIP Access
         </a>
@@ -325,7 +328,7 @@
 
     </section>
 
-    <section class="live-dates" id="live-dates">
+    <section class="live-dates" id="live-dates" hidden aria-hidden="true">
       <header class="live-dates-header">
         <p class="eyebrow">The Third Choice™ — Live</p>
         <h2>Where we’re going next.</h2>
@@ -335,7 +338,7 @@
       <div class="city-grid">
         <article class="city-card featured-city">
           <div><span class="city-number">01 / NOW BOARDING</span><h3>Cleveland</h3><p>October 16, 2026</p></div>
-          <a class="btn btn-lime" href="https://www.eventbrite.com/e/1998169626141?aff=oddtdtcreator" target="_blank" rel="noopener noreferrer">Get Tickets</a>
+          <a class="btn btn-lime" href="https://www.eventbrite.com/e/the-third-choicetm-a-live-thought-forum-for-women-tickets-1998169626141?aff=oddtdtcreator" target="_blank" rel="noopener noreferrer">Get Tickets</a>
         </article>
 
         <article class="city-card">
@@ -379,21 +382,21 @@
         </p>
 
         <h2>
-          Invest in her<br>
-          <em>next chapter.</em>
+          Interested in sponsoring<br>
+          <em>The Third Choice?</em>
         </h2>
 
         <p>
-          Put your brand in a room with professionals, leaders,
-          entrepreneurs and decision-makers who actively invest
-          in their careers, wellness, businesses and communities.
+          We welcome partnerships with organizations and brands that
+          believe in investing in women and the choices they make about
+          what comes next.
         </p>
 
         <a
           class="btn btn-light"
           href="contact.html?interest=partner"
         >
-          Start a Partnership Conversation
+          Start a Sponsorship Conversation
         </a>
 
       </div>
@@ -402,22 +405,22 @@
 
         <div>
           <span>Presenting Partner</span>
-          <strong>$10,000</strong>
-        </div>
-
-        <div>
-          <span>Keynote Partner</span>
           <strong>$5,000</strong>
         </div>
 
         <div>
-          <span>Experience Partner</span>
+          <span>Keynote Partner</span>
           <strong>$2,500</strong>
         </div>
 
         <div>
-          <span>Supporting Partner</span>
+          <span>Experience Partner</span>
           <strong>$1,000</strong>
+        </div>
+
+        <div>
+          <span>Supporting Partner</span>
+          <strong>$500</strong>
         </div>
 
       </div>
@@ -472,10 +475,12 @@
       </div>
 
       <a
-        href="tickets.html#live-dates"
+        href="https://www.eventbrite.com/e/the-third-choicetm-a-live-thought-forum-for-women-tickets-1998169626141?aff=oddtdtcreator"
         class="tc-ticket-button"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        VIEW DATES + CITIES
+        GET TICKETS
       </a>
 
     </section>
@@ -542,8 +547,8 @@
             Schedule
           </a>
 
-          <a href="tickets.html#live-dates">
-            Live
+          <a href="tickets.html">
+            Tickets
           </a>
 
         </nav>
