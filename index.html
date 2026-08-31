@@ -46,6 +46,74 @@
   >
 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Homepage hero copy refinement */
+    .home-hero .cinematic-hero-copy {
+      justify-content: center;
+      gap: 0;
+      padding-top: clamp(2rem, 4vh, 3.5rem);
+      padding-bottom: clamp(2rem, 4vh, 3.5rem);
+    }
+
+    .home-hero .cinematic-hero-copy h1 {
+      max-width: 15ch;
+      margin: 0 0 clamp(1.15rem, 2vw, 1.75rem);
+      font-size: clamp(2.8rem, 3.55vw, 4.35rem);
+      line-height: .92;
+      letter-spacing: -.035em;
+    }
+
+    .hero-introduction {
+      max-width: 39rem;
+      padding-left: clamp(1rem, 2vw, 1.5rem);
+      border-left: 4px solid #173f32;
+    }
+
+    .hero-introduction p {
+      margin: 0;
+    }
+
+    .hero-introduction .hero-introduction-lead {
+      color: #52605a;
+      font-size: clamp(.98rem, 1.15vw, 1.1rem);
+      line-height: 1.55;
+    }
+
+    .hero-introduction .hero-introduction-statement {
+      margin-top: 1rem;
+      color: #173f32;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.35rem, 2vw, 1.8rem);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .hero-introduction .hero-introduction-invitation {
+      margin-top: .6rem;
+      color: #7a6330;
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+
+    .home-hero .cinematic-hero-copy .button-row {
+      margin-top: clamp(1.25rem, 2vw, 1.75rem);
+    }
+
+    @media (max-width: 700px) {
+      .home-hero .cinematic-hero-copy h1 {
+        max-width: 12ch;
+        font-size: clamp(2.7rem, 12vw, 4.25rem);
+      }
+
+      .hero-introduction {
+        border-left-width: 3px;
+      }
+    }
+  </style>
 </head>
 
 <body data-page="home">
@@ -170,13 +238,22 @@
        What if the best decision of your life isn’t one of the choices you’ve been given?
       </h1>
 
-      <p>
-        The Third Choice™ is an activation for women who are
-        no longer satisfied choosing between success and
-        themselves. Step into a space designed to challenge
-        hidden assumptions, expand what's possible, and reveal
-        the options you couldn't see before.
-      </p>
+      <div class="hero-introduction">
+
+        <p class="hero-introduction-lead">
+          The Third Choice is a live thought forum for women who believe the
+          choices in front of them deserve a comma, not a period.
+        </p>
+
+        <p class="hero-introduction-statement">
+          Three perspectives. One room. New possibilities.
+        </p>
+
+        <p class="hero-introduction-invitation">
+          We invite you to show up curious.
+        </p>
+
+      </div>
 
       <div class="button-row">
 
@@ -413,7 +490,7 @@
         <div>
 
           <small>
-             Executive Coaching · Leadership Development · Organizational Consulting · Personal Brand & Wardrobe Strategy
+             Founder & Principal Consultant | Executive Coach | Leadership Development Practitioner | Organizational Consultant
           </small>
 
           <h3>Paris Lampkins</h3>
